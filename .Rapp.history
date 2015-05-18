@@ -1,0 +1,250 @@
+exp(.5)
+log(exp(sin(pi/4)^2)
+log(exp(sin(pi/4)^2))
+exp(sin(pi/4)^2)
+log(exp(sin(pi/4)^2)
+clear
+log(exp(sin(pi/4)^2) * exp(cos(pi/4)^2))
+?gamma
+x <- 8 9 7
+x <- c(8 9 7)
+x <- c(8,9,7)
+length(x)
+2 * x + 3
+3:1 * x + 1:3
+x[c(1,3)]
+x[-c(2)]
+ones <- rep(1,3)
+ones
+even <- seq(from = 2, to = 20, by = 2)
+even
+c(one,even)
+c(ones,even)
+trend = 1995:2000
+trend
+A <- matrix(1:8,nrow = 4)
+A
+t(A)
+A1 <- A(c(1,3),1:2)
+A1 <- A[c(1,3),1:2]
+A1
+A1 <- A[-2,]
+A1
+det(A1)
+A1 <- A[c(1,3),1:2]
+det(A1)
+eigen(A1)
+solve(A1)
+A1 %*% solve(A1)
+diag(rep(c(1,2), c(10, 10)))
+diag(rep(c(1,2), 10, 10))
+diag(rep(c(1,2), c(10, 10)))
+upper.tri(A1)
+A1
+diag(A1)
+cbind(1,A1)
+rbind(A1,diag(4,2))
+q()
+x <- c(8 9 7)
+x <- c(8,9,7)
+mode(x)
+x>8.5
+name(x) <- c("a","b","c")
+names(x) <- c("a","b","c")
+x
+names(x) <- letters(1:5)
+names(x) <- letters[1:5]
+names(x) <- letters[1:3]
+x
+names(x) <- letters[2:4]
+x
+x[2:3]
+x[c("c","d")]
+x[x!=8]
+data("Journals")
+wd
+objects()
+library("AER")
+data("Journals")
+journals <- Journals[, c("subs", "price")]
+journals$citeprice <- Journals$price/Journals$citations
+summary(journals)
+plot(log(subs) ~ log(citeprice), data = journals)
+mylist <- list(sample = rnorm(5), family = "normal distribution", parameters = list(mean = 0, sd = 1) )
+mylist
+mylist <- list(sample = rnorm(5), family = "normal distribution", parameters = list(mean = 100, sd = 1) )
+mylist
+mylist <- list(sample = rnorm(5), family = "normal distribution", parameters = list(mean = -100, sd = 1) )
+mylist
+mylist <- list(sample = rnorm(5), family = "normal distribution", parameters = list(mean = 0, sd = 1) )
+mylist
+mylist[[1]]
+mylist[["sample"]]
+mylist$sample
+mylist$3$mean
+mylist[[3]]$mean
+mylist$parameters$mean
+x <- c(1,2,3,4,5)
+x > 3 & x < 5
+x > 3 & x <= 5
+which(x > 3 & x <= 5)
+which.min(x)
+which.max(x)
+all(x > 3)
+any(x > 3)
+(1.9 - 0.9) == 1
+(1.5 - 0.5) == 1
+all.equal(1.9 - 0.9, 1)
+identical(1.9 - 0.9, 1)
+identical(1, 1)
+identical(1.0, 1)
+7 + TRUE
+is.numeric(x)
+is.character(x)
+as.character(x)
+c(1,"a")
+set.seed(12)
+rnorm(2)
+set.seed(12)
+rnorm(2)
+sample(1:5)
+sample(c("m","f"), size = 5, replace = TRUE, prob = c(0.2, 0.8))
+sample(c("male", "female"), size = 5, replace = TRUE, prob = c(0.2, 0.8))
+sample(c("m","f"), size = 5, replace = TRUE, prob = c(0.2, 0.8))
+x <- c(1.8, 3.14, 4, 88.169, 13)
+if (rnorm(1) > 0 sum(x) else mean(x))
+if (rnorm(1) > 0) sum(x) else mean(x)
+ifelse(x > 4, sqrt(x), sqr(x))
+ifelse(x > 4, sqrt(x), x^2)
+for(i = 2:5)
+for(i = 2:5){
+for(i in 2:5){
+x[i] = x[i] - x[i-1]
+}
+x[-1]
+while(sum(x) < 100){}
+x <- c(1.8, 3.14, 4, 88.169, 13)
+while(sum(x) < 100){x <- 2*x}
+x
+while(sum(x) < 100){x <- 2*x}
+while(sum(x) < 100){
+x <- 2 * x
+}
+x
+cmeans <- function(X) {rval <- rep(0, ncol(X))for(j in 1:ncol(X)) {mysum <- 0for(i in 1:nrow(X)) mysum <- mysum + X[i,j]rval[j] <- mysum/nrow(X)++++}+ return(rval) +}
+cmeans <- function(X) {}
+cmeans <- function(X) {
+rval <- rep(0, ncol(x))
+mysum <- 0
+for(i in 1:nrow(X)){
+mysum <- mysum + X[i,j]
+}
+cmeans <- function(X) {
+rval <- rep(0, ncol(x))
+for(j in 1:ncol(x)){
+mysum = 0
+X <- matrix(1:20, ncol = 2)
+}
+X <- matrix(1:20, ncol = 2)
+colMeans(X)
+apply(X,2,mean)
+q()
+pnorm(-0.7)
+pnorm(93, mean = 100, sd = 10)
+pnorm(70, mean = 80, sd = 10)
+qnorm(0.95, mean = 1100, sd = 75)
+qnorm(0.95, mean = 1100, sd = 75/sqrt(100))
+pbinom(3, size = 5, prob = 0.5, lower.tail = FALSE)
+pbinom(3, size = 5, prob = 0.5, lower.tail = FALSE)
+mean = 15
+sd = 10 / 10
+pnorm(16, mean = mean, sd = sd) - pnorm(14, mean = mean, sd = sd)
+ppois(10, 5 * 3)
+mylist <- list(sample = rnorm(5), family = "normal distribution", parameters = list(mean = -100, sd = 1) )
+rnorm(2)
+x <- seq(from = 0, to = 10, by = 0.5)
+y <- 2 + 3 * x + rnorm(21)
+plot(y ~ x)
+lm(y ~ x)
+mydata <- data.frame(one = 1:10, two = 11:20, three = 21:30)
+mydata
+mydata <- as.data.frame(matrix(1:30, nrow = 10, ncol = 3))
+names(mydata) <- c("one", "two", "three")
+mydata
+attach(mydata)
+mean(two)
+detach(mydata)
+with(mydata, mean(two))
+mydata.sub <- subset(mydata, two <= 16, select = -two)
+mydata.sub
+write.table(mydata, file = "mydata.txt", col.names = TRUE)
+read.table("mydata.txt", header = TRUE)
+dir("/Users/zhangyipei")
+load("/Users/zhangyipei")
+setwd()
+help setwd
+setwd(dir)
+setwd("R")
+setwd("/Users/zhangyipei/Desktop/R")
+getwd()
+write.csv(mydata)
+load(/Users/zhangyipei/Desktop/R)
+load(""/Users/zhangyipei/Desktop/R")
+load("/Users/zhangyipei/Desktop/R")
+load("/Users/zhangyipei/Desktop/R")
+load("/Users/zhangyipei")
+dir("/Users/zhangyipei")
+dir("/Users/zhangyipei/Desktop/R")
+read.csv(mydata)
+write.csv(mydata, file = mydata.csv)
+write.csv(mydata, file = "mydata.csv")
+dir(wd)
+read.csv("mydata.csv")
+write.csv2(mydata, file = "mydata.csv")
+read.csv2("mydata.csv")
+scan(file = "mydata.csv")
+data("Journals", package = "AER")
+dir("/Users/zhangyipei/Desktop/R")
+newdata <- data("Journals", package = "AER")
+newdata
+write.dta(mydata, "mydata.dta")
+library("foreign")
+write.dta(mydata, "mydata.dta")
+dir("/Users/zhangyipei/Desktop/R")
+file.remove(mydata.csv)
+file.remove("mydata.csv")
+dir("/Users/zhangyipei/Desktop/R")
+rep(0:1, c(2, 4))
+g <- rep(0:1, c(2, 4))
+factor(g, levels = 0:1, labels = c("male", "female"))
+g <- factor(g, levels = 0:1, labels = c("male", "female"))
+g
+is.na(mydata)
+x
+g
+summary(x)
+summary(g)
+class(x)
+class(g)
+summary
+methods(summary)
+normsample <- function(n, ...){
+rval <- rnorm(n, ...)
+class(rval) <- "normsample"
+return(rval)
+}
+set.seed(123)
+x <- normsample(10, mean = 5)
+x
+class(x)
+str(x)
+print(x)
+plot(x)
+summary.normsample <- function(object, ...){
+rval <- c(length(object), mean(object), sd(object))
+names(rval) <- c("length", "mean", "sd")
+return(rval)
+}
+summary(x)
+x
+q()
